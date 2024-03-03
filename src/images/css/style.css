@@ -1,0 +1,112 @@
+:root {
+  --primaryTextColor: #212121;
+  --secondTextColor: #757575;
+  --thirdTextColor: #ffffff;
+  --textColorLogo: #000000;
+  --colorOnMouseOver: #2196f3;
+  --bgColor: #ffffff;
+  --secondBgColor: #2f303a;
+  --thirdBgColor: #f5f4fa;
+  --projectBgColor: #eeeeee;
+}
+/* //-----Studio-----// */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+/* a[class=nav-link]{
+  font-weight: 500;
+}
+a[class=header-contacts-link] {
+  font-weight: 500;
+}
+h1{
+  font-weight: 900;
+  font-size: 44px;
+}
+button{
+  font-weight: 700;
+  font-size: 16px;
+}
+h2[class=feature-title] {
+  font-weight: 700;
+}
+h2[class=activity-title] {
+ font-weight: 700;
+ font-size: 36px;
+}
+h2[class=team-title] {
+  font-weight: 700;
+  font-size: 36px;
+}
+h2[class=teammate-name] {
+  font-weight: 500;
+  font-size: 16px;
+}
+p[class=teammate-role] {
+  font-size: 16px;
+} */ */
+ .nav-link {
+  font-weight: 500;
+}
+.header-contacts-link {
+  font-weight: 500;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+}
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+}
+.feature-title {
+  font-weight: 700;
+}
+.feature-text {
+  line-height: 171%;
+}
+.activity-title {
+ font-weight: 700;
+ font-size: 36px;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+}
+.teammate-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+.teammate-role {
+  font-size: 16px;
+}
+.footer-contacts-item {
+  line-height: 171%;
+}
+/* //-----Portfolio-----//  */
+.portfolio {
+  font-size: 16px;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+}
+.portfolio-filter-button {
+  font-weight: 500;
+  line-height: 162%;
+}
+.portfolio-project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+}
+.portfolio-project-filter {
+  line-height: 187%;
+}
+.footer-contacts-item {
+  line-height: 171%;
+}
