@@ -172,6 +172,9 @@ p[class=teammate-role] {
   letter-spacing: 0.03em;
   color: var(--secondTextColor);
 }
+.footer {
+  background-color: var(--secondBgColor);
+}
 .footer-logo {
   font-weight: 700;
   font-size: 26px;
