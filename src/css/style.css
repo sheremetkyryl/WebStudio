@@ -7,6 +7,7 @@
   --bgColor: #ffffff;
   --secondBgColor: #2f303a;
   --thirdBgColor: #f5f4fa;
+  --fourthBgColor: #2196F3;
   --projectBgColor: #eeeeee;
 }
 /* //-----Studio-----// */
@@ -16,38 +17,7 @@ body {
   font-size: 14px;
   color: var(--primaryTextColor);
 }
-/* a[class=nav-link]{
-  font-weight: 500;
-}
-a[class=header-contacts-link] {
-  font-weight: 500;
-}
-h1{
-  font-weight: 900;
-  font-size: 44px;
-}
-button{
-  font-weight: 700;
-  font-size: 16px;
-}
-h2[class=feature-title] {
-  font-weight: 700;
-}
-h2[class=activity-title] {
- font-weight: 700;
- font-size: 36px;
-}
-h2[class=team-title] {
-  font-weight: 700;
-  font-size: 36px;
-}
-h2[class=teammate-name] {
-  font-weight: 500;
-  font-size: 16px;
-}
-p[class=teammate-role] {
-  font-size: 16px;
-} */
+
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -120,6 +90,7 @@ p[class=teammate-role] {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--thirdTextColor);
+  background-color: var(--fourthBgColor);
 }
 .features {
   padding-top: 94px;
@@ -155,11 +126,12 @@ p[class=teammate-role] {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  column-gap: 30px;
 }
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  color: var(--thirdBgColor);
+  background-color: var(--thirdBgColor);
 }
 .team-title {
   font-weight: 700;
@@ -173,6 +145,9 @@ p[class=teammate-role] {
   justify-content: center;
   align-items: center;
   column-gap: 30px;
+}
+.teammate {
+  background-color: var(--bgColor);
 }
 .teammate-photo {
   width: 270px;
@@ -201,6 +176,9 @@ p[class=teammate-role] {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--thirdTextColor);
+}
+.footer-contacts-link {
+  color: var(--secondTextColor);
 }
 /* //-----Portfolio-----//  */
 .header {
