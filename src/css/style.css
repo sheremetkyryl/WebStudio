@@ -106,6 +106,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.2;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .feature-text {
   line-height: 1.71;
@@ -121,6 +122,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 .activities-list {
   display: flex;
@@ -139,6 +141,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 .team-members {
   display: flex;
@@ -152,6 +155,7 @@ body {
 .teammate-photo {
   width: 270px;
   height: 260px;
+  margin-bottom: 30px;
 }
 .teammate-name {
   font-weight: 500;
@@ -159,6 +163,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 10px;
 }
 .teammate-role {
   font-size: 16px;
@@ -166,21 +171,26 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondTextColor);
+  margin-bottom: 30px;
 }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondBgColor);
 }
+
 .footer-contacts-item {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--thirdTextColor);
+  margin-bottom: 9px;
 }
 .footer-contacts-link {
   color: var(--secondTextColor);
 }
+
 /* //-----Portfolio-----//  */
+
 .header {
   padding-top: 32px;
   padding-bottom: 94px;
@@ -188,15 +198,33 @@ body {
 .portfolio {
   font-size: 16px;
 }
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
 .nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
 .nav-link:hover {
   color: var(--colorOnMouseOver);
 }
+
 .header-contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -207,6 +235,13 @@ body {
 .header-contacts-link:hover {
   color: var(--colorOnMouseOver);
 }
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 34px;
+}
+
 .portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -217,16 +252,27 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.portfolio-projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+.portfolio-project-photo {
+  margin-bottom: 20px;
+}
 .portfolio-project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-left: 12px;
 }
 .portfolio-project-filter {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondTextColor);
+  margin-bottom: 23px;
 }
 .footer {
   padding-bottom: 57px;
