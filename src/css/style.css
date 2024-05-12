@@ -101,21 +101,42 @@ body {
   justify-content: space-between;
   column-gap: 30px;
 }
-.feature-item:nth-child(1)::before .feature-item::before {
-  content: "";
-  background-image: url(/src/images/icons/antenna.png);
+.feature-item:nth-child(1)::before {
+   content: "";
+   display: block;
+   height: 120px;
+   background-color: var(--thirdBgColor);
+   background-image: url(/src/images/icons/antenna.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   margin-bottom: 30px;
 }
-.feature-item:nth-child(2) .feature-item::before {
+.feature-item:nth-child(2)::before {
   content: "";
-  background-image: url(/src/images/icons/clock.png);
+  display: block;
+  height: 120px;
+  background-image: url(/src/images/icons/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
 }
-.feature-item:nth-child(3) .feature-item::before {
+.feature-item:nth-child(3)::before {
   content: "";
-  background-image: url(/src/images/icons/diagram.png);
+  display: block;
+  height: 120px;
+  background-image: url(/src/images/icons/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
 }
-.feature-item:nth-child(4) .feature-item::before {
+.feature-item:nth-child(4)::before {
   content: "";
-  background-image: url(/src/images/icons/astronaut.png);
+  display: block;
+  height: 120px;
+  background-image: url(/src/images/icons/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
 }
 .feature-title {
   font-weight: 700;
@@ -254,7 +275,7 @@ body {
 .portfolio-filter {
   display: flex;
   justify-content: center;
-  gap: 8px;
+   gap: 8px;
   margin-bottom: 34px;
 }
 
