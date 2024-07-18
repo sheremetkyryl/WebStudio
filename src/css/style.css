@@ -298,25 +298,7 @@ body {
   width: 20px;
   height: 16px;
 }
-/* .teammate-icons {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   gap: 22px;
-}
-.teammate-icon {
-  fill: var(--iconColor);
-  width: 20px;
-  height: 16px;
-  margin-bottom: 42px;
-}
-.teammate-icon:hover {
-  color: white;
-  background-color: var(--fourthBgColor);
-  padding: 12px;
-  border-radius: 50%;
-  transition: 0.5s;
-} */
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -360,6 +342,46 @@ body {
   transition: 0.5s;
   fill: var(--fourthBgColor);
 }
+.footer-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--thirdTextColor);
+
+}
+.footer-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--thirdTextColor);
+  fill: currentColor;
+  background-color: var(--secondBgColor);
+  transition: 0.5s;
+}
+.footer-link:hover {
+  background-color: var(--fourthBgColor);
+}
+.footer-list .footer-item {
+   margin-right: 10px;
+}
+
+.footer-icon {
+  fill: var(--iconColor);
+  width: 20px;
+  height: 16px;
+
+}
+
 /* //-----Portfolio-----//  */
 
 .header {
@@ -463,45 +485,6 @@ body {
   color: var(--thirdTextColor);
 }
 
-.footer-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.footer-title {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--thirdTextColor);
-
-}
-.footer-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--thirdTextColor);
-  fill: currentColor;
-  background-color: var(--secondBgColor);
-  transition: 0.5s;
-}
-.footer-link:hover {
-  background-color: var(--fourthBgColor);
-}
-.footer-list .footer-item {
-   margin-right: 10px;
-}
-
-.footer-icon {
-  fill: var(--iconColor);
-  width: 20px;
-  height: 16px;
-
-}
 
 
 
