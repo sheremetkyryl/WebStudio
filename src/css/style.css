@@ -9,6 +9,7 @@
   --thirdBgColor: #f5f4fa;
   --fourthBgColor: #2196F3;
   --projectBgColor: #eeeeee;
+  --iconColor: #AFB1B8 ;
 }
 /* //-----Studio-----// */
 body {
@@ -47,12 +48,23 @@ body {
   line-height: 1.2;
 }
 .nav-link:hover {
+  transition: 0.5s;
   color: var(--colorOnMouseOver);
 }
 .header-contacts {
   display: flex;
   align-items: center;
   gap: 65px;
+}
+.header-contacts-icon {
+  fill: #757575;
+  width: 18px;
+  height: 12px;
+  gap: 10px;
+}
+.header-contacts-icon:hover {
+  fill: var(--colorOnMouseOver);
+  transition: 0.5s;
 }
 .header-contacts-link {
   font-weight: 500;
@@ -62,6 +74,7 @@ body {
 }
 .header-contacts-link:hover {
   color: var(--colorOnMouseOver);
+  transition: 0.5s;
 }
 .hero {
   padding-top: 200px;
@@ -74,6 +87,7 @@ body {
   align-items: center;
   row-gap: 30px;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -153,6 +167,7 @@ body {
 }
 .activities {
   padding-bottom: 94px;
+  position: relative;
 }
 .activity-title {
   font-weight: 700;
@@ -167,6 +182,51 @@ body {
   justify-content: center;
   flex-direction: row;
   column-gap: 30px;
+}
+.activity-card {
+  position: relative;
+}
+.activity-photo {
+  display: block;
+}
+.activity-image-title {
+  color: var(--thirdTextColor);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 27px 107px;
+  background-color: #2f303ac1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.activity-image-title1 {
+  color: var(--thirdTextColor);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 27px 112px;
+  background-color: #2f303ac1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.activity-image-title2 {
+  color: var(--thirdTextColor);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 27px 94px;
+  background-color: #2f303ac1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .team {
   padding-top: 94px;
@@ -212,10 +272,56 @@ body {
   color: var(--secondTextColor);
   margin-bottom: 30px;
 }
+.teammate-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.teammate-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--thirdTextColor);
+  fill: currentColor;
+
+  transition: 0.5s;
+}
+.teammate-link:hover {
+  background-color: var(--fourthBgColor);
+}
+.teammate-icon {
+  fill: var(--iconColor);
+  width: 20px;
+  height: 16px;
+}
+/* .teammate-icons {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 22px;
+}
+.teammate-icon {
+  fill: var(--iconColor);
+  width: 20px;
+  height: 16px;
+  margin-bottom: 42px;
+}
+.teammate-icon:hover {
+  color: white;
+  background-color: var(--fourthBgColor);
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.5s;
+} */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondBgColor);
+
 }
 
 .footer-contacts-item {
@@ -227,7 +333,33 @@ body {
 .footer-contacts-link {
   color: var(--secondTextColor);
 }
-
+.regular-customers-title {
+  display: flex; 
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+.regular-customers-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 95px;
+  margin-bottom: 94px;
+}
+.regular-customers-card {
+  border: 2px solid var(--iconColor);
+  border-radius: 15px;
+}
+.regular-customers-icon {
+  margin: 23px 65px;
+  fill: var(--iconColor);
+  width: 41px;
+  height: 46px;
+}
+.regular-customers-icon:hover {
+  transition: 0.5s;
+  fill: var(--fourthBgColor);
+}
 /* //-----Portfolio-----//  */
 
 .header {
@@ -236,9 +368,10 @@ body {
 }
 .portfolio {
   font-size: 16px;
+
 }
 .portfolio-container {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
@@ -329,3 +462,51 @@ body {
   letter-spacing: 0.03em;
   color: var(--thirdTextColor);
 }
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--thirdTextColor);
+
+}
+.footer-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--thirdTextColor);
+  fill: currentColor;
+  background-color: var(--secondBgColor);
+  transition: 0.5s;
+}
+.footer-link:hover {
+  background-color: var(--fourthBgColor);
+}
+.footer-list .footer-item {
+   margin-right: 10px;
+}
+
+.footer-icon {
+  fill: var(--iconColor);
+  width: 20px;
+  height: 16px;
+
+}
+
+
+
+
+
+
+
+
