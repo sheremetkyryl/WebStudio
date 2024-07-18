@@ -106,6 +106,8 @@ body {
   color: var(--thirdTextColor);
   background-color: var(--fourthBgColor);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 .features {
   padding-top: 94px;
@@ -250,6 +252,8 @@ body {
 }
 .teammate {
   background-color: var(--bgColor);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+background: #fff;
 }
 .teammate-photo {
   width: 270px;
@@ -325,12 +329,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 95px;
+  gap: 30px;
   margin-bottom: 94px;
 }
 .regular-customers-card {
   border: 2px solid var(--iconColor);
-  border-radius: 15px;
+  border-radius: 4px;
 }
 .regular-customers-icon {
   margin: 23px 65px;
@@ -342,6 +346,32 @@ body {
   transition: 0.5s;
   fill: var(--fourthBgColor);
 }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.container-contacts {
+  margin-right: 70px;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  column-gap: 9px;
+  margin-top: 20px;
+}
+.footer-address {
+  line-height: 171%;
+  letter-spacing: 0.03em;
+}
+.footer-contacts-link {
+  line-height: 171%;
+  letter-spacing: 0.03em;  
+}
+
 .footer-list {
   display: flex;
   justify-content: center;
@@ -365,7 +395,7 @@ body {
   align-items: center;
   color: var(--thirdTextColor);
   fill: currentColor;
-  background-color: var(--secondBgColor);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: 0.5s;
 }
 .footer-link:hover {
@@ -483,12 +513,3 @@ body {
   letter-spacing: 0.03em;
   color: var(--thirdTextColor);
 }
-
-
-
-
-
-
-
-
-
