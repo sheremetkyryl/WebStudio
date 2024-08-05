@@ -39,11 +39,73 @@
       </ul>
     </div>
     </header>
+
+
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button class="button-close" data-modal-close>
+          <svg class="button-close-icon">
+            <use href=""></use>
+          </svg>
+        </button>
+
+        <form action="#" class="modal-form">
+          <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <div class="modal-form-field">
+            <h3 class="form-title">Ім'я</h3>
+          <label hidden for="name">
+            <input type="text" id="name" class="modal-input">
+            <svg width="18px" height="18px" class="people-icon">
+              <use href=""></use>
+            </svg>
+          </label>
+        </div>
+
+        <div class="modal-form-field">
+          <h3 class="form-title">Телефон</h3>
+            <label hidden for="number">
+            <input type="number" id="number" class="modal-input">
+            <svg width="18px" height="18px" class="telefon-icon">
+              <use href=""></use>
+            </svg>
+          </label>
+        </div>
+
+        <div class="modal-form-field">
+          <h3 class="form-title">Пошта</h3>
+            <label hidden for="email">
+            <input type="email" id="email" class="modal-input">
+            <svg width="18px" height="18px" class="email-icon">
+              <use href=""></use>
+            </svg>
+          </label>
+        </div>
+
+        <div class="modal-form-field">
+          <h3 class="form-title">Коментар</h3>
+            <label hidden for="comment">
+            <textarea name="comment" id="comment" placeholder="Введіть текст" class="modal-form-textarea"></textarea>
+          </label>
+        </div>
+
+        <div class="modal-form-checkbox">
+          <label hidden for="checkbox">
+            <input type="checkbox" class="modal-checkbox">
+            <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal-link" href="#">Умови договору</a></span>
+          </label>
+        </div>
+
+        <button class="submit-button" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
     <main class="main">
       <section class="hero">
         <div class="container container-hero">
         <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
-        <button class="hero-button">Замовити послугу</button>
+        <button class="hero-button">Замовити послугу</button data-modal-open>
       </div>
       </section>
       <section class="features">
@@ -258,7 +320,7 @@
               <div class="regular-customers-container">
               <ul class="regular-customers-list">
                 <li class="regular-customers-item">
-                <a class="regular-customers-link" href="#"><svg width="41" height="46px" class="regular-customers-icon">
+                <a class="regular-customers-link" href="#"><svg width="40px" height="52px" class="regular-customers-icon">
                   <use href="./src/images/symboldefs.svg#icon-ya-co"></use>
                 </svg>
               </a>
