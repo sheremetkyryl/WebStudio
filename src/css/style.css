@@ -91,55 +91,40 @@ body {
 	cursor: pointer;
 
 	padding: 6px;
-	background-color: var(--white-color);
+	background-color: white;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 15px;
 
-	fill: var(--black-color);
-
-	transition: fill 250ms var(--transition-time), border-color 250ms var(--transition-time);
+	fill: black;
 }
 
 .backdrop {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-
-	background: rgba(0, 0, 0, 0.2);
-
-	opacity: 1;
-	transition: opacity 250ms var(--transition-time);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .backdrop.is-hidden {
-	opacity: 0;
+	
 	pointer-events: none;
 }
 
 .modal {
-	position: absolute;
-	display: flex;
-	opacity: 1;
-	padding: 40px;
-
-	top: 50%;
-	left: 50%;
-	width: 528px;
-	height: 581px;
-	background: var(--white-color);
-
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 4px;
-
-	transform: translate(-50%, -50%) scale(1);
-	transition: transform 250ms var(--transition-time);
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 75px;
+  padding-right: 39px;
+  padding-bottom: 40pxpx;
+  padding-left: 41px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0.5);
-}
+
 
 .modal-form-title {
   font-weight: 700;
@@ -147,8 +132,7 @@ body {
 	line-height: 1.15;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: var(--title-text-color);
-
+	color: var(--primaryTextColor);
 	margin-bottom: 12px;
 }
 
@@ -159,39 +143,54 @@ body {
   position: relative;
 }
 
+
+.form-title {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--secondTextColor);
+  padding-bottom: 4px;
+}
 .modal-input {
-  margin-top: 4px;
+	margin-top: 4px;
 	width: 100%;
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	padding: 12px 12px 12px 42px;
-	outline: none;
+	
 	cursor: pointer;
 }
 
-.modal-input:hover,
-.modal-input:focus {
-	border-color: var(--second-accent-color);
-}
+
 
 .people-icon {
 	position: absolute;
 	top: 50%;
 	left: 12px;
-	fill: var(--title-text-color);
+	fill: #212121;
 	cursor: pointer;
-
-	transition: fill 250ms var(--transition-time);
 }
 
-.modal-form-input:hover + .people-icon,
-.modal-form-input:focus + .people-icon {
-	fill: var(--accent-color);
+.telefon-icon {
+  position: absolute;
+	top: 50%;
+	left: 12px;
+	fill: #212121;
+	cursor: pointer;
+  transform: ;
+}
+
+.email-icon {
+  position: absolute;
+	top: 50%;
+	left: 12px;
+	fill: #212121;
+	cursor: pointer;
 }
 
 .modal-form-textarea {
-	margin-top: 4px;
+  margin-top: 4px;
 	resize: none;
 	padding: 12px 16px;
 	width: 100%;
@@ -199,12 +198,11 @@ body {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	outline: none;
-	transition: border-color 250ms var(--transition-time);
 }
 
 .modal-form-textarea:hover,
 .modal-form-textarea:focus {
-	border-color: var(--second-accent-color);
+	border-color: #21212120;
 }
 
 .modal-form-textarea::placeholder {
@@ -225,11 +223,7 @@ body {
 	height: 1px;
 	margin: -1px;
 	border: 0;
-	padding: 0;
-
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
+	padding: 0;;
 	overflow: hidden;
 }
 
@@ -242,7 +236,7 @@ body {
 	outline: 0;
 	outline-offset: 0;
 	text-decoration-line: underline;
-	color: var(--accent-color);
+	color: #2196f3;
 
 	opacity: 0.5;
 	transition: opacity 250ms var(--transition-time);
@@ -257,25 +251,22 @@ body {
 .submit-button {
 	padding: 10px 55px;
 	margin: 0px auto;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+  border: none;
+  border-radius: 4px;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.06em;
-	color: var(--text-white-color);
-	background-color: var(--accent-color);
-
-	transition: background-color 250ms var(--transition-time), border-shadow 250ms var(--transition-time);
+	color: var(--thirdTextColor);
+	background-color: var(--fourthBgColor);
 }
 
 .submit-button:hover,
 .submit-button:focus {
-	background-color: var(--second-accent-color);
-	box-shadow: var(--button-primary-shodow);
+	background-color: var(--fourthBgColor);
 }
 
 .hero {
