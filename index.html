@@ -56,18 +56,21 @@
           <div class="modal-form-field">
             <h3 class="form-title">Ім'я</h3>
           <label hidden for="name"></label>
+          
+          <div class="input-container">
             <input type="text" id="name" class="modal-input">
-            <svg width="18px" height="18px" class="people-icon">
+            <svg width="18px" height="18px" class="modal-icon">
               <use href="./src/images/modalicons.svg#icon-people-icon"></use>
             </svg>
-          
+          </div>
+
         </div>
 
         <div class="modal-form-field">
           <h3 class="form-title">Телефон</h3>
             <label hidden for="number"></label>
             <input type="number" id="number" class="modal-input">
-            <svg width="18px" height="18px" class="telefon-icon">
+            <svg width="18px" height="18px" class="modal-icon">
               <use href="./src/images/modalicons.svg#icon-telefon-icon"></use>
             </svg>
           
@@ -77,7 +80,7 @@
           <h3 class="form-title">Пошта</h3>
             <label hidden for="email"></label>
             <input type="email" id="email" class="modal-input">
-            <svg width="18px" height="18px" class="email-icon">
+            <svg width="18px" height="18px" class="modal-icon">
               <use href="./src/images/modalicons.svg#icon-email-icon"></use>
             </svg>
           
@@ -105,7 +108,7 @@
       <section class="hero">
         <div class="container container-hero">
         <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
-        <button class="hero-button">Замовити послугу</button data-modal-open>
+        <button data-modal-open class="hero-button">Замовити послугу</button>
       </div>
       </section>
       <section class="features">
@@ -400,8 +403,23 @@
               </li>
            </ul>
         </div>
-     </div>
+      
 
+        <div class="footer-form-container">
+          <h2 class="footer-form-title">Підпишіться на розсилку</h2>
+          <div class="form-container">
+          <form class="footer-form" action="#" id="email">
+            <label for="email" hidden></label>
+            <input class="footer-form-input" type="email" id="email" placeholder="E-mail">
+          </form>
+          <button class="footer-form-button">Підписатися
+          <svg class="footer-form-icon" width="24px" height="24px">
+            <use href="./src/images/icon-send.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+        </div>
+      </div>
+    </div>
     
     </footer>
 
