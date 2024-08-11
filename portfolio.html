@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,17 +18,17 @@
 <body class="portfolio">
     <header class="header">
     <div class="container portfolio-container">
-        <a class="header-logo" href="./index.html"><img src="./src/images/logo/webstudio.webp" alt="логотип"></a>
+        <a class="header-logo animate__animated animate__fadeInLeft" href="./index.html"><img src="./src/images/logo/webstudio.webp" alt="логотип"></a>
         <nav class="header-nav">
             <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="index.html">Студія</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Портфоліо</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+                <li class="nav-item animate__animated animate__fadeInDown"><a class="nav-link" href="index.html">Студія</a></li>
+                <li class="nav-item animate__animated animate__fadeInDown"><a class="nav-link" href="#">Портфоліо</a></li>
+                <li class="nav-item animate__animated animate__fadeInDown"><a class="nav-link" href="#">Контакти</a></li>
             </ul>
         </nav>
         <ul class="header-contacts">
-            <li class="header-contacts-item"><a class="header-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="header-contacts-item"><a class="header-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="header-contacts-item animate__animated animate__fadeInDown"><a class="header-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="header-contacts-item animate__animated animate__fadeInRight"><a class="header-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </div>
     </header>
@@ -32,14 +36,15 @@
         <section class="portfolio-section">
         <div class="container filter-container">
             <ul class="portfolio-filter">
-                <li class="portfolio-filter-item"><button class="portfolio-filter-button">Усі</button></li>
-                <li class="portfolio-filter-item"><button class="portfolio-filter-button">Веб-сайти</button></li>
-                <li class="portfolio-filter-item"><button class="portfolio-filter-button">Додатки</button></li>
-                <li class="portfolio-filter-item"><button class="portfolio-filter-button">Дизайн</button></li>
-                <li class="portfolio-filter-item"><button class="portfolio-filter-button">Маркетинг</button></li>
+                <li class="portfolio-filter-item animate__animated animate__zoomIn"><button class="portfolio-filter-button">Усі</button></li>
+                <li class="portfolio-filter-item animate__animated animate__zoomIn"><button class="portfolio-filter-button">Веб-сайти</button></li>
+                <li class="portfolio-filter-item animate__animated animate__zoomIn"><button class="portfolio-filter-button">Додатки</button></li>
+                <li class="portfolio-filter-item animate__animated animate__zoomIn"><button class="portfolio-filter-button">Дизайн</button></li>
+                <li class="portfolio-filter-item animate__animated animate__zoomIn"><button class="portfolio-filter-button">Маркетинг</button></li>
             </ul>
         <div class="portfolio-projects">
-            <article class="portfolio-project">
+            <div  class="card-container">
+            <article class="portfolio-project animate__animated animate__zoomIn">
             <div class="overlay-container">
                 <img class="portfolio-project-photo" src="./src/images/projects/project_1.webp" alt="Технокряк" width="370" height="294"/>
                 <p class="overlay">
@@ -55,8 +60,9 @@
                     <h2 class="portfolio-project-title">Технокряк</h2>
                     <p class="portfolio-project-filter">Веб-сайт</p>
                 </div>
+            </div>
             </article>
-            <article class="portfolio-project">
+            <article class="portfolio-project animate__animated animate__zoomIn">
                 <div class="overlay-container">
                 <img class="portfolio-project-photo" src="./src/images/projects/project_2.webp" alt="Постер New Orlean vs Golden Star">
                 <p class="overlay">
@@ -73,7 +79,7 @@
                 <p class="portfolio-project-filter">Дизайн</p>
                 </div>
             </article>
-            <article class="portfolio-project">
+            <article class="portfolio-project animate__animated animate__zoomIn">
                 <div class="overlay-container">
                 <img class="portfolio-project-photo" src="./src/images/projects/project_3.webp" alt="Ресторан Seafood">
                 <p class="overlay">
@@ -90,7 +96,7 @@
                 <p class="portfolio-project-filter">Додаток</p>
                 </div>
             </article>
-            <article class="portfolio-project-photo" class="portfolio-project">
+            <article class="portfolio-project animate__animated animate__zoomIn">
                 <div class="overlay-container">
                 <img class="portfolio-project-photo" src="./src/images/projects/project_4.webp" alt="Проєкт Prime">
                 <p class="overlay">
@@ -107,7 +113,7 @@
                 <p class="portfolio-project-filter">Маркетинг</p>
                 </div>
             </article>
-            <article class="portfolio-project">
+            <article class="portfolio-project animate__animated animate__zoomIn">
                 <div class="overlay-container">
                 <img class="portfolio-project-photo" src="./src/images/projects/project_5.webp" alt="Проєкт Boxes">
                 <p class="overlay">
@@ -124,7 +130,7 @@
                 <p class="portfolio-project-filter">Додаток</p>
                 </div>
             </article>
-            <article class="portfolio-project">
+            <article class="portfolio-project animate__animated animate__zoomIn">
                 <div class="overlay-container">
                 <img class="portfolio-project-photo" src="./src/images/projects/project_6.webp" alt="Inspiration has no Borders">
                 <p class="overlay">
@@ -140,9 +146,9 @@
                 <h2 class="portfolio-project-title">Inspiration has no Borders</h2>
                 <p class="portfolio-project-filter">Веб-сайт</p>
                 </div>
-            </div>
+            
             </article>
-            <article class="portfolio-project">
+            <article class="portfolio-project animate__animated animate__zoomIn">
                 <div class="overlay-container">
                 <img class="portfolio-project-photo" src="./src/images/projects/project_7.webp" alt="Видання Limited Edition">
                 <p class="overlay">
@@ -159,7 +165,7 @@
                 <p class="portfolio-project-filter">Дизайн</p>
                 </div>
             </article>
-            <article class="portfolio-project">
+            <article class="portfolio-project animate__animated animate__zoomIn">
                 <div class="overlay-container">
                 <img class="portfolio-project-photo" src="./src/images/projects/project_8.webp" alt="Проєкт LAB">
                 <p class="overlay">
@@ -176,7 +182,7 @@
                 <p class="portfolio-project-filter">Дизайн</p>
                 </div>
             </article>
-            <article class="portfolio-project"> 
+            <article class="portfolio-project animate__animated animate__zoomIn"> 
                 <div class="overlay-container">
                 <img class="portfolio-project-photo" src="./src/images/projects/project_9.webp" alt="Growing Business">
                 <p class="overlay">
@@ -194,11 +200,10 @@
                 </div>
             </article>
         </div>
-    </div>
     </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div data-aos="fade-up" class="container">
         <a class="footer-logo" href="./index.html"><img src="./src/images/logo/second-logo.webp" alt="логотип"></a>
         <ul class="footer-contacts">
             <li class="footer-contacts-item"><address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address></li>
@@ -207,5 +212,9 @@
           </ul>
         </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

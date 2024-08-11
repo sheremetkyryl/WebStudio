@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./src/css/style.css"/>
     <link rel="stylesheet" href="./src/css/reset.css">
@@ -14,24 +21,22 @@
   <body>
     <header class="header">
       <div class="container header-container">
-      <a class="header-logo" href="./index.html"><img src="./src/images/logo/webstudio.webp" alt="логотип"/></a>
+      <a class="header-logov animate__animated animate__fadeInLeft" href="./index.html"><img src="./src/images/logo/webstudio.webp" alt="логотип"/></a>
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#">Студія</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Портфоліо</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+          <li class="nav-item animate__animated animate__fadeInDown"><a class="nav-link" href="#">Студія</a></li>
+          <li class="nav-item animate__animated animate__fadeInDown"><a class="nav-link" href="portfolio.html">Портфоліо</a></li>
+          <li class="nav-item animate__animated animate__fadeInDown"><a class="nav-link" href="#">Контакти</a></li>
         </ul>
       </nav>
       <ul class="header-contacts">
-        <li class="header-contacts-item">
+        <li class="header-contacts-item animate__animated animate__fadeInDown">
           <a class="header-contacts-link" href="mailto:info@devstudio.com"> <svg class="header-contacts-icon" width="16px" height="12px" >
             <use href="./src/images/symbol-defs.svg#icon-envelope"></use>
           </svg> info@devstudio.com</a>
         
         </li>
-        <li class="header-contacts-item">
+        <li class="header-contacts-item animate__animated animate__fadeInRight">
           <a class="header-contacts-link" href="tel:+380961111111"><svg class="header-contacts-icon" width="16px" height="12px" >
             <use href="./src/images/symbol-defs.svg#icon-phone"></use>
           </svg> +38 096 111 11 11</a>
@@ -106,7 +111,7 @@
     </div>
     <main class="main">
       <section class="hero">
-        <div class="container container-hero">
+        <div class="container container-hero animate__animated animate__zoomIn">
         <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
         <button data-modal-open class="hero-button">Замовити послугу</button>
       </div>
@@ -114,27 +119,27 @@
       <section class="features">
         <div class="container">
         <ul class="features-list">
-          <li class="feature-item">
+          <li class="feature-item animate__animated animate__zoomIn">
             <h2 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h2>
             <p class="feature-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="feature-item">
+          <li class="feature-item animate__animated animate__zoomIn">
             <h2 class="feature-title">ПУНКТУАЛЬНІСТЬ</h2>
             <p class="feature-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="feature-item">
+          <li class="feature-item animate__animated animate__zoomIn">
             <h2 class="feature-title">ПЛАНУВАННЯ</h2>
             <p class="feature-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="feature-item">
+          <li class="feature-item animate__animated animate__zoomIn">
             <h2 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
             <p class="feature-text">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -146,10 +151,10 @@
       </section>
       <section class="activities">
         <div class="container">
-        <h2 class="activity-title">Чим ми займаємося</h2>
+        <h2 data-aos="zoom-in" class="activity-title">Чим ми займаємося</h2>
         <ul class="activities-list">
           <li class="activity-item">
-            <article class="activity-card">
+            <article data-aos="fade-right" class="activity-card">
             <img
               class="activity-photo"
               src="./src/images/box/coding.webp"
@@ -159,7 +164,7 @@
           </article>
           </li>
           <li class="activity-item">
-            <article class="activity-card">
+            <article data-aos="zoom-in" class="activity-card">
             <img
               class="activity-photo"
               src="./src/images/box/technology.webp"
@@ -169,7 +174,7 @@
           </article>
           </li>
           <li class="activity-item">
-            <article class="activity-card">
+            <article data-aos="fade-left" class="activity-card">
             <img
               class="activity-photo"
               src="./src/images/box/tablet.webp"
@@ -183,9 +188,9 @@
       </section>
       <section class="team">
         <div class="container">
-        <h2 class="team-title">Наша команда</h2>
+        <h2 data-aos="zoom-in" class="team-title">Наша команда</h2>
         <div class="team-members">
-          <article class="teammate">
+          <article data-aos="zoom-in-up" class="teammate">
             <img
               class="teammate-photo"
               src="./src/images/teams/igor-demyanenko.webp"
@@ -217,7 +222,7 @@
                </li>
               </div>
           </article>
-          <article class="teammate">
+          <article data-aos="zoom-in-up" class="teammate">
             <img
               class="teammate-photo"
               src="./src/images/teams/olga-repina.webp"
@@ -249,7 +254,7 @@
                </li>
               </div>
           </article>
-          <article class="teammate">
+          <article data-aos="zoom-in-up" class="teammate">
             <img
               class="teammate-photo"
               src="./src/images/teams/mykola-tarasov.webp"
@@ -281,7 +286,7 @@
                </li>
               </div>
           </article>
-          <article class="teammate">
+          <article data-aos="zoom-in-up" class="teammate">
             <img
               class="teammate-photo"
               src="./src/images/teams/mykhailo-yermakov.webp"
@@ -319,40 +324,40 @@
       </div>
       </section>
       <section class="regular-customers">
-        <h2 class="regular-customers-title">Постійні клієнти</h2>
+        <h2 data-aos="zoom-in-down" class="regular-customers-title">Постійні клієнти</h2>
               <div class="regular-customers-container">
               <ul class="regular-customers-list">
-                <li class="regular-customers-item">
+                <li data-aos="zoom-out" class="regular-customers-item">
                 <a class="regular-customers-link" href="#"><svg width="40px" height="52px" class="regular-customers-icon">
                   <use href="./src/images/symboldefs.svg#icon-ya-co"></use>
                 </svg>
               </a>
             </li>
-              <li class="regular-customers-item">
+              <li data-aos="zoom-out" class="regular-customers-item">
                 <a class="regular-customers-link" href="#"><svg width="40" height="52px" class="regular-customers-icon">
                   <use href="./src/images/symboldefs.svg#icon-company3"></use>
                 </svg>
               </a>
               </li>
-                <li class="regular-customers-item">
+                <li data-aos="zoom-out" class="regular-customers-item">
                 <a class="regular-customers-link" href="#"><svg width="43" height="41px" class="regular-customers-icon">
                   <use href="./src/images/symboldefs.svg#icon-company2"></use>
                 </svg>
               </a>
               </li>
-                <li class="regular-customers-item">
+                <li data-aos="zoom-out" class="regular-customers-item">
                 <a class="regular-customers-link" href="#"><svg width="84" height="40px" class="regular-customers-icon">
                   <use href="./src/images/symboldefs.svg#icon-foster-peters"></use>
                 </svg>
               </a>
               </li>
-                <li class="regular-customers-item">
+                <li data-aos="zoom-out" class="regular-customers-item">
               <a class="regular-customers-link" href="#"><svg width="62" height="45px" class="regular-customers-icon">
                   <use href="./src/images/symboldefs.svg#icon-brand"></use>
                 </svg>
               </a>
               </li>
-                <li class="regular-customers-item">
+                <li data-aos="zoom-out" class="regular-customers-item">
                 <a class="regular-customers-link" href="#"><svg width="93" height="43px"  class="regular-customers-icon">
                   <use href="./src/images/symboldefs.svg#icon-company"></use>
                 </svg>
@@ -363,7 +368,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
+      <div data-aos="fade-up" class="container footer-container">
         <div class="container-contacts">
           <a class="footer-logo" href="./index.html"><img src="./src/images/logo/second-logo.webp" alt="логотип"/></a>
           <ul class="footer-contacts">
@@ -403,7 +408,6 @@
               </li>
            </ul>
         </div>
-      
 
         <div class="footer-form-container">
           <h2 class="footer-form-title">Підпишіться на розсилку</h2>
@@ -424,5 +428,9 @@
     </footer>
 
     <script src="./src/js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
